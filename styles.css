@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(to bottom, #1a001f, #3d0066);
+  color: white;
+  font-family: Arial;
+  text-align: center;
+}
+
+h1 {
+  color: #d633ff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px 0;
+}
