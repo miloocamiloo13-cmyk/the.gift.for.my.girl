@@ -3,27 +3,57 @@ body {
   color: white;
   font-family: Arial;
   text-align: center;
+  margin: 0;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
 }
 
 h1 {
   color: #d633ff;
   font-size: 32px;
   margin-bottom: 20px;
+  text-shadow: 0 0 10px #d633ff;
+
+  animation: aparecer 2s ease;
 }
 
 p {
   font-size: 18px;
-}
+  line-height: 1.6;
 
+  animation: aparecer 3s ease;
+}
 footer {
   margin-top: 40px;
   font-size: 14px;
+  opacity: 0.8;
 }
-
 ul {
   list-style: none;
+  padding: 0;
 }
-
 li {
   margin: 10px 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 12px;
+  transition: transform 0.3s, background 0.3s;
+}
+li:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
